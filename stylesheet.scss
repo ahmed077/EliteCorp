@@ -1,0 +1,380 @@
+$mainBlue: #08526d;
+$mainRed: #ec1c23;
+a, a:hover, a:active, a:focus{
+  text-decoration: none;
+  color:inherit;
+}
+.mainBlue {
+    color:$mainBlue;
+}
+.mainRed {
+    color:$mainRed;
+}
+.background {
+    background-position:center;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-size: cover;
+}
+.overlay{
+  background:rgba(0,0,0,.6);
+  height:100%;
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  z-index: 2;
+}
+header{
+    .upper-bar {
+        background:$mainBlue;
+        color:#CCC;
+        .mail, i{
+            color:white;
+        }
+        .get-quote{
+            border:1px solid $mainRed;
+            padding:0 10px;
+            display: inline-block;
+            margin-left:30px;
+        }
+    }
+    .navbar {
+        .navbar-brand {
+            font-size:40px;
+        }
+        .navbar-nav .active>.nav-link{
+            color:$mainRed;
+        }
+        .navbar-nav .nav-link {
+            font-size:16px;
+            margin-left:10px;
+        }
+    }
+    .slide{
+        background:#ddd;
+        .carousel-indicators li {
+            height:15px;
+            width:15px;
+            cursor: pointer;
+            border:1px solid #fff;
+            margin:0 5px;
+            opacity:0.8;
+            &:hover{
+                opacity:1;
+            }
+        }
+        h1{
+            position:absolute;
+            top:100px;
+            left:50px;
+            z-index: 3;
+            font-size:55px;
+            line-height: 2;
+            @media (max-width:760px) {
+                &{
+                    font-size:40px;
+                    line-height:1.5
+                }
+            }
+            span{
+                background:$mainRed;
+                display:inline-block;
+                padding:3px 5px;
+            }
+        }
+        .carousel-inner{
+            height:100%;
+            .carousel-item{
+                height:100%;
+            }
+            .carousel-one{
+                background-image:url('http://picsum.photos/1920/?image=0');
+            }
+            .carousel-two{
+                background-image:url('http://picsum.photos/1920/?image=1');
+            }
+            .carousel-three{
+                background-image:url('http://picsum.photos/1920/?image=2');
+            }
+        }
+    }
+}
+/* header end */
+section {
+    padding:50px 0;
+    h2 {
+        padding-bottom:30px;
+    }
+}
+.features {
+    i {
+        background-color:$mainRed;
+        display:block;
+        padding:20px 0;
+        margin-bottom:10px !important;
+        width:70px;
+        height:70px;
+        color:white;
+    }
+    h4{
+        height:58px;
+        display:flex;
+        align-items: center;
+        justify-content: center
+    }
+}
+/* features end */
+.company{
+    background:#f0f5f7;
+    h4 {
+        font-family: monospace;
+        letter-spacing: 1px;
+        margin-bottom:40px;
+        color:#777;
+    }
+    span {
+        color:white;
+        background:$mainRed;
+        padding:7px 20px;
+        letter-spacing: 1px;
+        display:inline-block;
+    }
+}
+/*company end*/
+.featwork {
+    h4 {
+
+    }
+    ul {
+        margin-top: 40px;
+        li {
+            border-radius: 1px;
+            border: 1px solid #000;
+            padding: 5px 10px;
+            margin-left: 5px;
+            cursor: pointer;
+            display: inline-block;
+            margin-bottom: 10px;
+            transition: all 0.2s ease-in-out;
+            &.active {
+                margin-left: 0;
+                border: none;
+                background: $mainRed;
+                color: #fff;
+            }
+            &:hover {
+                background: $mainRed * 1.1;
+                color: #fff;
+            }
+        }
+    }
+    .works {
+        .row {
+            margin: 0;
+            & > div {
+                padding: 0;
+                height: 300px;
+                transition:all 0.2s ease-in-out;
+            }
+            .vis:hover > i {
+                opacity: 1;
+            }
+            .img {
+                height: 100%;
+            }
+            i {
+                position:absolute;
+                z-index:2;
+                color:white;
+                width:100%;
+                top:0;
+                left:0;
+                opacity:0;
+                height:100%;
+                display:flex;
+                justify-content: center;
+                align-items:center;
+                background:rgba(8,82,109,.8);
+                transition:all 0.2s ease-in-out;
+            }
+            .work-1 .img {background-image:url('http://picsum.photos/300/?image=11')}
+            .work-2 .img {background-image:url('http://picsum.photos/300/?image=21')}
+            .work-3 .img {background-image:url('http://picsum.photos/300/?image=31')}
+            .work-4 .img {background-image:url('http://picsum.photos/300/?image=41')}
+            .work-5 .img {background-image:url('http://picsum.photos/300/?image=51')}
+            .work-6 .img {background-image:url('http://picsum.photos/300/?image=61')}
+            .work-7 .img {background-image:url('http://picsum.photos/300/?image=71')}
+            .work-8 .img {background-image:url('http://picsum.photos/300/?image=81')}
+        }
+    }
+}
+.latestposts {
+  .posts {
+    .card{
+      padding:0;
+      h6 {
+        font-size:13px;
+      }
+      a {
+        font-size:12px;
+      }
+    }
+    .card-img-top {
+      height:267px;
+    }
+    .card:first-of-type .card-img-top{
+      background-image:url('http://picsum.photos/300/?image=66');
+    }
+    .card:nth-of-type(2) .card-img-top{
+      background-image:url('http://picsum.photos/300/?image=88');
+    }
+    .card:last-of-type .card-img-top{
+      background-image:url('http://picsum.photos/300/?image=111');
+    }
+  }
+}
+.board {
+  background-image:url('http://picsum.photos/1920/?random');
+  position:relative;
+  .carousel-item {
+    &>div {
+      height: 400px;
+    }
+    p {
+      max-width:600px;
+    }
+    &:first-of-type .img {
+      background-image:url('http://picsum.photos/300/?image=21');
+    }
+    &:nth-of-type(2) .img {
+      background-image:url('http://picsum.photos/300/?image=41');
+    }
+    &:last-of-type .img {
+      background-image:url('http://picsum.photos/300/?image=61');
+    }
+  }
+  .img {
+    height:150px;
+    width:150px;
+  }
+    .carousel-inner {
+        z-index:111;
+    }
+  .carousel-control {
+    width:50px;
+    height:50px;
+    background: #000;
+    opacity:1;
+    top:175px;
+      z-index:111;
+    &:hover{
+      background:$mainRed;
+    }
+  }
+  .carousel-indicators {
+    bottom:-20px;
+    li {
+      height: 15px;
+      width: 15px;
+      cursor: pointer;
+      border: 1px solid #fff;
+      margin: 0 5px;
+      opacity: 0.8;
+      &:hover {
+        opacity: 1;
+    }
+  }
+  }
+}
+.pricing {
+  .pricing-box {
+    .card-title {
+      font-size:24px;
+    }
+    .active {
+      transform:translateY(-15px);
+      .price {
+        background: $mainRed;
+      }
+      .buy {
+        background:$mainBlue;
+      }
+    }
+    .card {
+      box-shadow: 0px 1px 3px 1px #ccc;
+    }
+    .price {
+      font-size:35px;
+      &::after {
+        content: 'YEAR';
+        font-size:16px;
+      }
+    }
+    .buy {
+      background:$mainRed;
+    }
+  }
+}
+@media(max-width:768px) {
+  .chooseus .row {
+    margin:0;
+  }
+}
+.chooseus {
+  padding:0;
+  overflow:hidden;
+  .row {
+    background-image: url("http://picsum.photos/1920/?random");
+  }
+  .col-md-6 {
+    padding: 70px 50px 70px 20px;
+    background-color:$mainBlue;
+  }
+  p:last-of-type{
+    margin-bottom:50px;
+  }
+  .moreBtn {
+    background:$mainRed;
+    padding:5px 12px;
+    letter-spacing: 1px;
+    font-size:18px;
+    font-weight:500;
+
+  }
+}
+.statistics {
+  .number {
+    font-size:50px;
+    margin:-10px 0;
+  }
+  .quote{
+    font-size:14px;
+  }
+}
+.contact {
+  background:$mainRed;
+  font-size:24px;
+  a {
+    border:2px solid #fff;
+    padding:5px 10px;
+  }
+}
+footer {
+  padding:50px 0 0;
+  .desc-more {
+      color: $mainBlue;
+  }
+  .cr-sm {
+    padding-top:20px;
+    border-top:2px solid #ccc;
+    p{
+      font-size:14px;
+    }
+  }
+  .contact-ft {
+    p {
+      margin-bottom:26px;
+    }
+  }
+}

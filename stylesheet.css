@@ -1,0 +1,389 @@
+a, a:hover, a:active, a:focus {
+  text-decoration: none;
+  color: inherit;
+}
+
+.mainBlue {
+  color: #08526d;
+}
+
+.mainRed {
+  color: #ec1c23;
+}
+
+.background {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  background-size: cover;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+header .upper-bar {
+  background: #08526d;
+  color: #CCC;
+}
+header .upper-bar .mail, header .upper-bar i {
+  color: white;
+}
+header .upper-bar .get-quote {
+  border: 1px solid #ec1c23;
+  padding: 0 10px;
+  display: inline-block;
+  margin-left: 30px;
+}
+header .navbar .navbar-brand {
+  font-size: 40px;
+}
+header .navbar .navbar-nav .active > .nav-link {
+  color: #ec1c23;
+}
+header .navbar .navbar-nav .nav-link {
+  font-size: 16px;
+  margin-left: 10px;
+}
+header .slide {
+  background: #ddd;
+}
+header .slide .carousel-indicators li {
+  height: 15px;
+  width: 15px;
+  cursor: pointer;
+  border: 1px solid #fff;
+  margin: 0 5px;
+  opacity: 0.8;
+}
+header .slide .carousel-indicators li:hover {
+  opacity: 1;
+}
+header .slide h1 {
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  z-index: 3;
+  font-size: 55px;
+  line-height: 2;
+}
+@media (max-width: 760px) {
+  header .slide h1 {
+    font-size: 40px;
+    line-height: 1.5;
+  }
+}
+header .slide h1 span {
+  background: #ec1c23;
+  display: inline-block;
+  padding: 3px 5px;
+}
+header .slide .carousel-inner {
+  height: 100%;
+}
+header .slide .carousel-inner .carousel-item {
+  height: 100%;
+}
+header .slide .carousel-inner .carousel-one {
+  background-image: url("http://picsum.photos/1920/?image=0");
+}
+header .slide .carousel-inner .carousel-two {
+  background-image: url("http://picsum.photos/1920/?image=1");
+}
+header .slide .carousel-inner .carousel-three {
+  background-image: url("http://picsum.photos/1920/?image=2");
+}
+
+@media (max-width: 768px) {
+  header .slide h1 {
+    font-size: 28px;
+  }
+}
+/* header end */
+section {
+  padding: 50px 0;
+}
+section h2 {
+  padding-bottom: 30px;
+}
+
+.features i {
+  background-color: #ec1c23;
+  display: block;
+  padding: 20px 0;
+  margin-bottom: 10px !important;
+  width: 70px;
+  height: 70px;
+  color: white;
+}
+.features h4 {
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* features end */
+.company {
+  background: #f0f5f7;
+}
+.company h4 {
+  font-family: monospace;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+  color: #777;
+}
+.company span {
+  color: white;
+  background: #ec1c23;
+  padding: 7px 20px;
+  letter-spacing: 1px;
+  display: inline-block;
+}
+
+/*company end*/
+.featwork ul {
+  margin-top: 40px;
+}
+.featwork ul li {
+  border-radius: 1px;
+  border: 1px solid #000;
+  padding: 5px 10px;
+  margin-left: 5px;
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 10px;
+  transition: all 0.2s ease-in-out;
+}
+.featwork ul li.active {
+  margin-left: 0;
+  border: none;
+  background: #ec1c23;
+  color: #fff;
+}
+.featwork ul li:hover {
+  background: #ff1f27;
+  color: #fff;
+}
+.featwork .works .row {
+  margin: 0;
+}
+.featwork .works .row > div {
+  padding: 0;
+  height: 300px;
+  transition: all 0.2s ease-in-out;
+}
+.featwork .works .row .vis:hover > i {
+  opacity: 1;
+}
+.featwork .works .row .img {
+  height: 100%;
+}
+.featwork .works .row i {
+  position: absolute;
+  z-index: 2;
+  color: white;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(8, 82, 109, 0.8);
+  transition: all 0.2s ease-in-out;
+}
+.featwork .works .row .work-1 .img {
+  background-image: url("http://picsum.photos/300/?image=11");
+}
+.featwork .works .row .work-2 .img {
+  background-image: url("http://picsum.photos/300/?image=21");
+}
+.featwork .works .row .work-3 .img {
+  background-image: url("http://picsum.photos/300/?image=31");
+}
+.featwork .works .row .work-4 .img {
+  background-image: url("http://picsum.photos/300/?image=41");
+}
+.featwork .works .row .work-5 .img {
+  background-image: url("http://picsum.photos/300/?image=51");
+}
+.featwork .works .row .work-6 .img {
+  background-image: url("http://picsum.photos/300/?image=61");
+}
+.featwork .works .row .work-7 .img {
+  background-image: url("http://picsum.photos/300/?image=71");
+}
+.featwork .works .row .work-8 .img {
+  background-image: url("http://picsum.photos/300/?image=81");
+}
+
+.latestposts .posts .card {
+  padding: 0;
+}
+.latestposts .posts .card h6 {
+  font-size: 13px;
+}
+.latestposts .posts .card a {
+  font-size: 12px;
+}
+.latestposts .posts .card-img-top {
+  height: 267px;
+}
+.latestposts .posts .card:first-of-type .card-img-top {
+  background-image: url("http://picsum.photos/300/?image=66");
+}
+.latestposts .posts .card:nth-of-type(2) .card-img-top {
+  background-image: url("http://picsum.photos/300/?image=88");
+}
+.latestposts .posts .card:last-of-type .card-img-top {
+  background-image: url("http://picsum.photos/300/?image=111");
+}
+
+.board {
+  background-image: url("http://picsum.photos/1920/?random");
+  position: relative;
+}
+.board .carousel-item > div {
+  height: 400px;
+}
+.board .carousel-item p {
+  max-width: 600px;
+}
+.board .carousel-item:first-of-type .img {
+  background-image: url("http://picsum.photos/300/?image=21");
+}
+.board .carousel-item:nth-of-type(2) .img {
+  background-image: url("http://picsum.photos/300/?image=41");
+}
+.board .carousel-item:last-of-type .img {
+  background-image: url("http://picsum.photos/300/?image=61");
+}
+.board .img {
+  height: 150px;
+  width: 150px;
+}
+.board .carousel-inner {
+  z-index: 111;
+}
+.board .carousel-control {
+  width: 50px;
+  height: 50px;
+  background: #000;
+  opacity: 1;
+  top: 175px;
+  z-index: 111;
+}
+.board .carousel-control:hover {
+  background: #ec1c23;
+}
+.board .carousel-indicators {
+  bottom: -20px;
+}
+.board .carousel-indicators li {
+  height: 15px;
+  width: 15px;
+  cursor: pointer;
+  border: 1px solid #fff;
+  margin: 0 5px;
+  opacity: 0.8;
+}
+.board .carousel-indicators li:hover {
+  opacity: 1;
+}
+
+.pricing .pricing-box .card-title {
+  font-size: 24px;
+}
+.pricing .pricing-box .active {
+  transform: translateY(-15px);
+}
+.pricing .pricing-box .active .price {
+  background: #ec1c23;
+}
+.pricing .pricing-box .active .buy {
+  background: #08526d;
+}
+.pricing .pricing-box .card {
+  box-shadow: 0px 1px 3px 1px #ccc;
+}
+.pricing .pricing-box .price {
+  font-size: 35px;
+}
+.pricing .pricing-box .price::after {
+  content: 'YEAR';
+  font-size: 16px;
+}
+.pricing .pricing-box .buy {
+  background: #ec1c23;
+}
+
+@media (max-width: 768px) {
+  .chooseus .row {
+    margin: 0;
+  }
+}
+.chooseus {
+  padding: 0;
+  overflow: hidden;
+}
+.chooseus .row {
+  background-image: url("http://picsum.photos/1920/?random");
+}
+.chooseus .col-md-6 {
+  padding: 70px 50px 70px 20px;
+  background-color: #08526d;
+}
+.chooseus p:last-of-type {
+  margin-bottom: 50px;
+}
+.chooseus .moreBtn {
+  background: #ec1c23;
+  padding: 5px 12px;
+  letter-spacing: 1px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.statistics .number {
+  font-size: 50px;
+  margin: -10px 0;
+}
+.statistics .quote {
+  font-size: 14px;
+}
+
+.contact {
+  background: #ec1c23;
+  font-size: 24px;
+}
+.contact a {
+  border: 2px solid #fff;
+  padding: 5px 10px;
+}
+
+footer {
+  padding: 50px 0 0;
+}
+footer .desc-more {
+  color: #08526d;
+}
+footer .cr-sm {
+  padding-top: 20px;
+  border-top: 2px solid #ccc;
+}
+footer .cr-sm p {
+  font-size: 14px;
+}
+footer .contact-ft p {
+  margin-bottom: 26px;
+}
+
+/*# sourceMappingURL=stylesheet.css.map */
